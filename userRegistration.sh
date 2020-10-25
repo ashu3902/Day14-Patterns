@@ -9,4 +9,12 @@ then
 else
 	echo "Invalid First Name"
 fi
-
+echo "Enter Last Name"
+read lname
+patLname="^[A-Z]*[a-z]{3}$"
+if [[ $lname =~ $patLname ]]
+then
+	echo "Valid Last name"
+else
+	echo "Invalid Last name"
+fi
