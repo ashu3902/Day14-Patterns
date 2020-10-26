@@ -27,3 +27,12 @@ then
 else
 	echo "Invalid email"
 fi
+echo "Enter contact number"
+read mob
+patMob="^[0-9]{2} [0-9]{10}$"
+if [[ $mob =~ $patMob ]]
+then
+	echo "Valid Mobile Number"
+else
+	echo "Invalid Mobile Number"
+fi
