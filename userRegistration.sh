@@ -2,7 +2,7 @@
 echo "This is User Registration Problem"
 echo "Enter First Name"
 read fname
-patFname="^[A-Z]*[a-z]{3}$"
+patFname="^[A-Z][A-Za-z]{2,}$"
 if [[ $fname =~ $patFname ]]
 then
 	echo "Valid First Name"
