@@ -36,3 +36,12 @@ then
 else
 	echo "Invalid Mobile Number"
 fi
+echo "Enter password"
+read pass
+patPass="^[a-zA-Z0-9.,!@#$&*-]{8,}$"
+if [[ $pass =~ $patPass ]]
+then
+	echo "Valid password"
+else
+	echo "Invalid password"
+fi
